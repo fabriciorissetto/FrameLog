@@ -1,0 +1,11 @@
+﻿using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
+[assembly: AssemblyTitle("FrameLog")]
+[assembly: AssemblyDescription("Entity Framework 5 Logging Library")]
+[assembly: AssemblyCompany("LShift Ltd")]
+[assembly: AssemblyProduct("FrameLog")]
+[assembly: AssemblyCopyright("Copyright 2013")]
+[assembly: AssemblyVersion("${version.major}.${version.minor}.${version.build}")]
+[assembly: AssemblyFileVersion("${version.major}.${version.minor}.${version.build}")]

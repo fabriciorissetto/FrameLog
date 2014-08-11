@@ -1,0 +1,7 @@
+C:\CWI\Projects\Schlumberger\Fábrica\Pacotes\LogisticsApp\Fontes\Branches\Release3\SLB.BPI.Logistics.Log\bin\Test\FrameLog.dll
+C:\CWI\Projects\Schlumberger\Fábrica\Pacotes\LogisticsApp\Fontes\Branches\Release3\SLB.BPI.Logistics.Log\bin\Test\EntityFramework.dll
+C:\CWI\Projects\Schlumberger\Fábrica\Pacotes\LogisticsApp\Fontes\Branches\Release3\SLB.BPI.Logistics.Log\bin\Test\EntityFramework.SqlServer.dll
+C:\CWI\Projects\Schlumberger\Fábrica\Pacotes\LogisticsApp\Fontes\Branches\Release3\SLB.BPI.Logistics.Log\bin\Test\EntityFramework.xml
+C:\CWI\Projects\Schlumberger\Fábrica\Pacotes\LogisticsApp\Fontes\Branches\Release3\SLB.BPI.Logistics.Log\bin\Test\EntityFramework.SqlServer.xml
+C:\CWI\Projects\Schlumberger\Fábrica\Pacotes\LogisticsApp\Fontes\Branches\Release3\SLB.BPI.Logistics.Log\obj\Test\SLB.BPI.Logistics.Log.csprojResolveAssemblyReference.cache
+C:\CWI\Projects\Schlumberger\Fábrica\Pacotes\LogisticsApp\Fontes\Branches\Release3\SLB.BPI.Logistics.Log\obj\Test\FrameLog.dll

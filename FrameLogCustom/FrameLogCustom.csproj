@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC274648-2C27-4635-98A1-3101FC829057}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FrameLog</RootNamespace>
+    <AssemblyName>FrameLog</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'SLBProduction|AnyCPU'">
+    <OutputPath>bin\SLBProduction\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'SLBTests|AnyCPU'">
+    <OutputPath>bin\SLBTests\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Homolog|AnyCPU'">
+    <OutputPath>bin\Homolog\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Production|AnyCPU'">
+    <OutputPath>bin\Production\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <OutputPath>bin\Test\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.1\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="AssemblyInfo.cs.template" />
+    <Compile Include="Filter\AttributeBasedLoggingFilter.cs" />
+    <Compile Include="Exceptions\ErrorInDeferredCalculation.cs" />
+    <Compile Include="Filter\BlacklistLoggingFilter.cs" />
+    <Compile Include="Filter\DoLogAttribute.cs" />
+    <Compile Include="Filter\FilterAttributeCache.cs" />
+    <Compile Include="Filter\Filters.cs" />
+    <Compile Include="Filter\ILoggingFilter.cs" />
+    <Compile Include="Filter\IFilterAttribute.cs" />
+    <Compile Include="Contexts\DbContextAdapter.cs" />
+    <Compile Include="Contexts\IHistoryContext.cs" />
+    <Compile Include="Contexts\ObjectContextAdapter.cs" />
+    <Compile Include="Filter\DoNotLogAttribute.cs" />
+    <Compile Include="Filter\ILoggingFilterProvider.cs" />
+    <Compile Include="Filter\TypeLookup.cs" />
+    <Compile Include="Filter\UnknownTypeException.cs" />
+    <Compile Include="Filter\WhitelistLoggingFilter.cs" />
+    <Compile Include="Helpers\AttributeHelpers.cs" />
+    <Compile Include="Helpers\ExpressionHelper.cs" />
+    <Compile Include="Helpers\MetadataSpaceMapper.cs" />
+    <Compile Include="History\Change.cs" />
+    <Compile Include="History\CreationDoesNotExistInLogException.cs" />
+    <Compile Include="History\HistoryExplorer.cs" />
+    <Compile Include="History\IChange.cs" />
+    <Compile Include="Models\IChangeSetFactory.cs" />
+    <Compile Include="Models\IChangeSet.cs" />
+    <Compile Include="Models\IObjectChange.cs" />
+    <Compile Include="Models\IPropertyChange.cs" />
+    <Compile Include="FrameLogModule.cs" />
+    <Compile Include="Contexts\IFrameLogContext.cs" />
+    <Compile Include="IHasLoggingReference.cs" />
+    <Compile Include="Logging\ChangeLogger.cs" />
+    <Compile Include="Logging\DeferredValueMap.cs" />
+    <Compile Include="Logging\IOven.cs" />
+    <Compile Include="Logging\Recorder.cs" />
+    <Compile Include="Logging\ValuePair.cs" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

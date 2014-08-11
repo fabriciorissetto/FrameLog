@@ -1,0 +1,7 @@
+C:\Projects\FrameLogCustom\FrameLogCustom\bin\Debug\FrameLog.dll
+C:\Projects\FrameLogCustom\FrameLogCustom\bin\Debug\FrameLog.pdb
+C:\Projects\FrameLogCustom\FrameLogCustom\bin\Debug\EntityFramework.xml
+C:\Projects\FrameLogCustom\FrameLogCustom\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\FrameLogCustom\FrameLogCustom\obj\Debug\FrameLogCustom.csprojResolveAssemblyReference.cache
+C:\Projects\FrameLogCustom\FrameLogCustom\obj\Debug\FrameLog.dll
+C:\Projects\FrameLogCustom\FrameLogCustom\obj\Debug\FrameLog.pdb
