@@ -1,0 +1,4 @@
+C:\Projects\FrameLogCustom\FrameLogCustom\bin\Release\FrameLog.dll
+C:\Projects\FrameLogCustom\FrameLogCustom\bin\Release\FrameLog.pdb
+C:\Projects\FrameLogCustom\FrameLogCustom\obj\Release\FrameLog.dll
+C:\Projects\FrameLogCustom\FrameLogCustom\obj\Release\FrameLog.pdb
